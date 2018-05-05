@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Using CSS Grid and Validation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Form Validation Using Regex  </h1>
+  <form class="form1" id="regForm">
+    <label for="Name">Name<span>*</span></label>
+    <input id="name" type="text" placeholder="Name" maxlength="60">
+
+    <label for="phone">Mobile No.<span>*</span></label>
+    <input id="phone" type="text" placeholder="9999999999" maxlength="10">
+
+    <label for="email">Email<span>*</span></label>
+    <input id="email" type="text" placeholder="test@test.com" maxlength="60">
+
+    <label for="comment">Write Your Message</label>
+    <textarea name="" id="comment" cols="30" rows="7" placeholder="Message Maximum 250 Characters" maxlength="250"></textarea>
+
+    <button id="submit">Submit</button>
+    <span>* Required Field</span><span class="errMessage" id="errMessage">Please Enter Detail</span>
+  </form>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

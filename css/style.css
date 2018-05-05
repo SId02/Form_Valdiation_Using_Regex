@@ -1,0 +1,58 @@
+
+h1{
+  text-align: center;
+  color:#ff7f50;
+}
+
+
+form {
+  display: grid;
+  padding: 1em;
+background-color:#ddd;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  padding: 1em;
+}
+
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form button {
+  background: #867860;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+}
+ form button:hover {
+            background: gold;
+        }
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+span {
+  color: #fa0808;
+  font-size: 20px;
+}
+
+@media (min-width: 400px) {
+  form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+  label {
+    text-align: right;
+    grid-column: 1 / 2;
+  }
+  input, button {
+    grid-column: 2 / 3;
+  }
+}
